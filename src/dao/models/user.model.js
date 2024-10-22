@@ -14,7 +14,7 @@ const userSchema = mongoose.Schema({
   age: {
     type: Number,
     required: true,
-  },
+  }
 });
 
 export const userModel = mongoose.model(userCollection, userSchema);

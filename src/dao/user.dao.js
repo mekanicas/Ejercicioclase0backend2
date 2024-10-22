@@ -18,7 +18,7 @@ class UserDao {
 
   async update(id, data) {
 
-    return await userModel.findByIdAndUpdate(id, data)
+    return await userModel.findByIdAndUpdate(id, data, {new: true})
   }
 
   async delete(id) {
